@@ -1,20 +1,20 @@
-####Commands to execute:
+*** Commands to execute ***
 
 sudo docker compose up
 
-##### prompts for user account creation
+1. command for user account creation
 
 sudo docker exec -ti mailserver setup email add arul@arulbalaji.xyz
 
-#####To generate DKIM 
+2. To generate DKIM 
 
 sudo docker exec -ti mailserver setup config dkim
 
-#####copy the DKIM to add it in DNS Records
+3. copy the DKIM to add it in DNS Records
 
 cat docker-data/dms/config/opendkim/keys/example.com/mail.txt
 
-#####To run the container
+4. To run the container
 
 docker run --rm -it \
 -v "${PWD}/docker-data/certbot/certs/:/etc/letsencrypt/" \
