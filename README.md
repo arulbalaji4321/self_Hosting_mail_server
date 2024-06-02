@@ -25,6 +25,7 @@ certbot/certbot certonly --standalone -d mailer.arulbalaji.xyz
 5. Setup Mail Web Client
 
 mkdir /var/www/rainloop
+
 unzip rainloop-latest.zip -d /var/www/rainloop
 
 wget -qO- https://repository.rainloop.net/installer.php | php
