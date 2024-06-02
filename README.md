@@ -1,4 +1,4 @@
-*** Commands to execute ***
+COMMANDS TO SETUP MAIL SERVER
 
 sudo docker compose up
 
